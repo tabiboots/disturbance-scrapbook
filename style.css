@@ -26,6 +26,18 @@ main {
   display: flex;
 }
 
+figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+figcaption{
+  font-size: 16px;
+  text-align: center;
+}
+
 /* LANDING PAGE STYLING */
 
 .headingFlexbox{
@@ -86,29 +98,35 @@ main {
   width: 75vw;
   min-height: 75vh;
   display: flex;
-  margin-top: 1rem;
   flex-direction: column;
 }
 
 .blogpostTitle{
-  align-self: center;
   color: red;
+  align-self: center;
   font-size: 40pt;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .blockParent{
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 20pt;
-  gap: 20px;
+  justify-content: space-between;
+  font-size: 18pt;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .blogpostImage {
-  flex-grow: 0.5;
   max-width: 300px;
+}
+
+.blogpostSubtitle {
+  display: flex;
+  align-items: start;
+  font-size: 22px;
+  padding-left: 20px;
 }
 
 .backButton {
